@@ -9,10 +9,12 @@
   <button ion-button color="energized" (click)="refreshFunction()" >Refresh</button>
   
     
-    <ion-list *ngFor="let data of result">
+    <ion-list *ngFor="let data of result" inset>
+
       <button ion-item (click)="itemSelected(data)" >
          {{data}}
-      </button>  
+      </button> 
+
     </ion-list>
     <ion-card>
       <img src={{displayPicture}}/>
